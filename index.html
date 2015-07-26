@@ -1,28 +1,73 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta viewport="device-width">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,scalable=none"/>
 	<title>gmaso's homepage</title>
 	<style type="text/css">
-		g.head{background-color: blue;}
+		body{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.g-head{
+			position: absolute;
+			width: 100%;
+			height: 100px;
+			top: 0;
+		}
+		.g-nav{
+			position: absolute;
+			width: 100%;
+			height: 50px;
+			top: 100px;
+			text-align: center;
+		}
+		.g-main{
+			position: absolute;
+			top: 150px;
+			bottom: 100px;
+		}
+		.g-foot{
+			position: absolute;
+			width: auto;
+			height: 50px;
+			bottom: 0;
+		}
+		.g-head p{
+			position: absolute;
+			top: 40px;
+			right: 10px;
+			color: #fff;
+			font: 16px/1.5 "simfun";
+		}
+		.g-nav ul{
+			display: inline-block;
+			margin: 5px auto;
+		}
+		.g-nav li{
+			display: inline-block;
+			float: left;
+			width: 100px;
+			background-color: blue;
+			padding: 10px;
+
+		}
 	</style>
 </head>
 <body>
 	<header class="g-head">
 		<div class="m-head">
 			<img class="m-head-img" src="image/index.jpg" width="100%" height="100px" title="my favorite photo">
-			<P>
-				如果说有什么美丽是我渴望也拥有过的，那只是梦中的你！
-			</P>
+			<P>如果说曾见过什么美丽是我渴望也拥有过的<br />那就是梦中的你!</P>
 		</div>
 	</header>
 	<nav class="g-nav">
-		<ol>
-			<li>nav1</li>
-			<li>nav2</li>
-			<li>nav3</li>
-		</ol>
+		<ul>
+			<li>过去</li>
+			<li>现在</li>
+			<li>不远的未来</li>
+		</ul>
 	</nav>
 	<div class="g-main">
 		main-body
