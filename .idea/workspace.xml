@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a3ea1d5-4f99-4799-9e88-15e7c9a1b811" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/color.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work01/js/page.js" afterPath="$PROJECT_DIR$/work01/js/page.js" />
-    </list>
+    <list default="true" id="7a3ea1d5-4f99-4799-9e88-15e7c9a1b811" name="Default" comment="" />
     <ignored path="gmaso.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

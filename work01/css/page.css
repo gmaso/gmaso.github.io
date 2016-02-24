@@ -27,7 +27,7 @@
 
 /* 总体设置 */
 html{background: #aaa;}
-body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow: auto;background: #fff;}
+body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: hidden;background: #fff;}
 .ct{width: 1205px;margin: 0 auto;overflow: hidden;}
 .j-close{cursor: pointer;}
 
