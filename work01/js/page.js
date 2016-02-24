@@ -235,7 +235,7 @@ function gCourse(){
       var o = document.createElement("a");
       pNode.appendChild(o);
       o.innerHTML=pageStart+i;
-      o.setAttribute("href", "####");
+      o.setAttribute("href", "javascript:;");
       if(i==GLOBAL.P.pageNo-pageStart){
         o.setAttribute("class", "z-crt");
       }
