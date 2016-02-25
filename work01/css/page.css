@@ -32,7 +32,7 @@ body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: h
 .j-close{cursor: pointer;}
 
 /* 页面遮罩 */
-.mask{top: 0;bottom: 0;left: 0;right: 0;background-color:rgba(40,40,40,0.8);z-index: 20;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8282828,endColorstr=#C8282828);}
+.mask{top: 0;bottom: 0;left: 0;right: 0;background-color:rgba(40,40,40,0.8);z-index: 20;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282828",endColorstr="#282828");}
 
 
 
@@ -75,12 +75,12 @@ body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: h
 .g-banner .m-slide{display: block;position: absolute;left: -808px;}
 .m-slide{position: relative;width: 100%;height: 460px;background: #000;}
 .m-slide ol,.m-slide li{position: absolute;top: 0;width: 100%;height: 100%;z-index:10;}
-.m-slide li{opacity: 0;-webkit-transition:.5s ease-out;-moz-transition:.5s ease-out;-ms-transition:.5s ease-out;transiton:.5s ease-out;-webkit-transition-property:opacity,left,top;-moz-transiton-property:opacity,left,top;-ms-transition-property:opacity,left,top;transition-property:opacity,left,top;}
+.m-slide li{opacity: 0;-webkit-transition:.5s ease-out;-moz-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out;-webkit-transition-property:opacity,left,top;-moz-transition-property:opacity,left,top;-ms-transition-property:opacity,left,top;transition-property:opacity,left,top;}
 .m-slide li.z-crt{z-index: 11;opacity: 1;}
 
 /* 多点式幻灯指示控制器-居中 */
 .u-pointer{position: absolute;bottom: 10px;left: 0;right: 0;z-index: 15;text-align: center;line-height: 0;}
-.u-pointer i{display: inline-block;width: 10px;height: 10px;margin: 0 0 0 5px;border-radius: 50%;box-shadow: inset 0 10x 0 rgba(0,0,0,0.5);cursor: pointer;background: #ccc;}
+.u-pointer i{display: inline-block;width: 10px;height: 10px;margin: 0 0 0 5px;border-radius: 50%;box-shadow: inset 0 10px 0 rgba(0,0,0,0.5);cursor: pointer;background: #ccc;}
 .u-pointer i:first-child{margin-left: 0;}
 .u-pointer i:hover{background: #666;}
 .u-pointer i.z-crt{background: #333;}
