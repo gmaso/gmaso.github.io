@@ -27,8 +27,8 @@ a,a:hover{color:#333;}
 .f18{font-size:18px;}
 .f20{font-size:20px;}
 .f28{font-size:28px;}
-.fb{font-size:bold;}
-.fn{font-size:normal;}
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
 
 /* 定位 */
 .tl{text-align:left;}
@@ -39,7 +39,7 @@ a,a:hover{color:#333;}
 .fr{float:right;display:inline-block;}
 /* 在浮动元素的父容器直接清除子元素浮动 */
 .clearfix:after{content:"";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
-.pf{position: fixed;}
+.pf{position:fixed;}
 .pr{position:relative;}
 .pa{position:absolute;}
 /* IE的专有属性，用于触发hasLayout */
