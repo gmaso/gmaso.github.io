@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #eee;
+}
+header,footer,div,ul,p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.x-list {
+  list-style-type: none;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
+
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: inherit;
+}
+header {
+  position: relative;
+  height: 80px;
+  background-color: #522A5C;
+}
+header .container {
+  height: 100%;
+}
+header span {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 24px;
+}
+header .x-list {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font: 14px/1.2 "宋体";
+}
+header .x-list li {
+  float: left;
+  padding-left: 28px;
+}
+header>a {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.banner {
+  width: 100%;
+  height: 525px;
+  background-image: url(../img/banner-bg.jpg);
+  background-size: auto 100%;
+}
+.banner .container {
+  height: 100%;
+}
+.banner article {
+  position: absolute;
+  width: 340px;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.5) 75%,rgba(255,255,255,0));
+  color: #fff;
+  padding: 10px 10px 30px 10px;
+}
+.banner h3 {
+  font: 14px "宋体";
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.banner p {
+  font: 12px/1.5 "宋体";
+  text-indent: 2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.env {
+  width: 100%;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+.env .container {
+  overflow: hidden;
+}
+.env li {
+  float: left;
+  width: 320px;
+  background-color: #fff;
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
+}
+.env li+li {
+  margin-left: 10px;
+}
+.env img {
+  width: 300px;
+  height: 180px;
+  padding: 10px;
+}
+.env p {
+  padding: 5px 30px 25px 30px;
+  font: 12px/1.7 "宋体";
+  color: #000;
+  text-indent: 2em;
+}
+.info {
+  height: 515px;
+  color: #000;
+  background-color: #fff;
+}
+.info img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+.info h3 {
+  font: 20px "Century Gothic";
+  text-align: center;
+  margin-top: 50px;
+}
+.info p {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-indent: 2em;
+}
+footer {
+  position: relative;
+  height: 400px;
+  background-color: #000;
+  color: #ccc;
+  font: 12px/1.7 "宋体";
+}
+footer .location {
+  height: 40px;
+}
+footer .break {
+  height: 1px;
+  background-color: #333;
+}
+footer .x-list {
+  width: 172px;
+  margin: 0 auto;
+}
+footer .location li {
+  float: left;
+  line-height: 40px;
+}
+footer .location li+li {
+  margin-left: 25px;
+}
+footer .list-block {
+  float: left;
+  width: 180px;
+  padding: 5px;
+}
+footer div+div {
+  margin-left: 6px;
+}
+.copy {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.copyright {
+  position: absolute;
+  margin-left: -50%;
+  bottom: 0;
+  text-align: center;
+}
+.copyright img {
+  display: block;
+  /*padding: 0 60px;*/
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px)
+{
+  header .git { display: none; }
+}
+
+.career {
+  height: 1400px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  color: #000;
+}
+.career .ybreak {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  left: 487px;
+  background-color: #eee;
+}
+.career .c-item {
+  position: relative;
+  width: 680px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.career .c-item img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  margin-bottom: 25px;
+}
+.career img.img-self {
+  position: relative;
+  top: -70px;
+  height: 160px;
+  border-width: 10px;
+  margin-bottom: -50px;
+}
+.career .title {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+.title h3 {
+  font: 20px/1.2 "宋体";
+  padding-right: 80px;
+  margin-top: 0;
+}
+.career .spec {
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+.spec>p {
+  font: 14px/1.8 "宋体";
+  padding-left: 33px;
+}
+.spec table {
+  position: relative;
+  left: -38px;
+}
+.spec td {
+  height: 70px;
+}
+.spec .yyyy {
+  width: 59px;
+  height: 23px;
+  border: 6px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  font: 14px/1.8 "宋体";
+  text-align: center;
+}
+.spec .detail {
+  font: 14px/1.8 "宋体";
+  padding-left: 10px;
+}
+div+div+div .title h3 {
+  margin-top: 25px;
+}
