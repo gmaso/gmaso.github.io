@@ -1,0 +1,559 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #eee;
+}
+header,footer,div,ul,p,img {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.x-list {
+  list-style-type: none;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: inherit;
+}
+header {
+  position: relative;
+  height: 80px;
+  background-color: #522A5C;
+}
+header .container {
+  height: 100%;
+}
+header span {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-size: 24px;
+}
+header .x-list {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font: 14px/1.2 "宋体";
+}
+header .x-list li {
+  float: left;
+  padding-left: 28px;
+}
+header>a {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+footer {
+  position: relative;
+  height: 400px;
+  background-color: #000;
+  color: #ccc;
+  font: 12px/1.7 "宋体";
+}
+footer .location {
+  height: 40px;
+}
+footer .break {
+  height: 1px;
+  background-color: #333;
+}
+footer .x-list {
+  width: 172px;
+  margin: 0 auto;
+}
+footer .location li {
+  float: left;
+  line-height: 40px;
+}
+footer .location li+li {
+  margin-left: 25px;
+}
+footer .list-block {
+  float: left;
+  width: 180px;
+  padding: 5px;
+}
+footer div+div {
+  margin-left: 6px;
+}
+.copy {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-left: 0;
+}
+.copy .copyright {
+  width: 980px;
+  margin: 0 auto;
+}
+.copyright h5 {
+  text-align: center;
+}
+.copyright img {
+  display: block;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px)
+{
+  header .git { display: none; }
+}
+
+/* 首页样式 */
+.banner {
+  width: 100%;
+  height: 525px;
+  background-image: url(../img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.banner .container {
+  height: 100%;
+}
+.banner article {
+  position: absolute;
+  width: 340px;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.5) 75%,rgba(255,255,255,0));
+  color: #fff;
+  padding: 10px 10px 30px 10px;
+}
+.banner h3 {
+  font: 14px "宋体";
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.banner p {
+  font: 12px/1.5 "宋体";
+  text-indent: 2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.env {
+  width: 100%;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+.env .container {
+  overflow: hidden;
+}
+.env li {
+  float: left;
+  width: 320px;
+  background-color: #fff;
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
+}
+.env li+li {
+  margin-left: 10px;
+}
+.env img {
+  width: 300px;
+  height: 180px;
+  padding: 10px;
+}
+.env p {
+  padding: 5px 30px 25px 30px;
+  font: 12px/1.7 "宋体";
+  color: #000;
+  text-indent: 2em;
+}
+.info {
+  height: 515px;
+  color: #000;
+  background-color: #fff;
+}
+.info .myphoto {
+  position: relative;
+  top: -50px;
+}
+.info img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.info h3 {
+  font: 20px "Century Gothic";
+  text-align: center;
+  margin-top: 50px;
+}
+.info p {
+  width: 600px;
+  margin: 0 auto;
+  font: 14px/1.7 "simsun";
+  text-indent: 2em;
+}
+
+
+/* about页面样式 */
+.career {
+  height: 1400px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  color: #000;
+}
+.career .ybreak {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  left: 487px;
+  background-color: #eee;
+}
+.career .c-item {
+  position: relative;
+  width: 680px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.career .c-item img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #eee;
+  margin-bottom: 25px;
+}
+.career img.img-self {
+  position: relative;
+  top: -70px;
+  height: 160px;
+  border-width: 10px;
+  margin-bottom: -50px;
+}
+.career .title {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+.title h3 {
+  font: 20px/1.2 "宋体";
+  padding-right: 80px;
+  margin-top: 0;
+}
+.career .spec {
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+.spec>p {
+  font: 14px/1.8 "宋体";
+  padding-left: 33px;
+}
+.spec table {
+  position: relative;
+  left: -38px;
+}
+.spec td {
+  height: 70px;
+}
+.spec .yyyy {
+  width: 59px;
+  height: 23px;
+  border: 6px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  font: 14px/1.8 "宋体";
+  text-align: center;
+}
+.spec .detail {
+  font: 14px/1.8 "宋体";
+  padding-left: 10px;
+}
+div+div+div .title h3 {
+  margin-top: 25px;
+}
+
+/* blog页面样式 */
+.main {
+  height: 1520px;
+  margin-top: 20px;
+}
+.blog {
+  float: left;
+  width: 710px;
+}
+.blog-item {
+  position: relative;
+  height: 329px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: #000;
+}
+.sideinfo {
+  position: absolute;
+  width: 50px;
+  left: -50px;
+  top: 30px;
+  color: #fff;
+}
+.sideinfo span {
+  display: block;
+  width: 50px;
+  height: 40px;
+  font: 14px/40px arial;
+  text-align: center;
+}
+.sideinfo .blog-date {
+  background-color: #522a5c;
+}
+.sideinfo .blog-type {
+  background-color: #a660b7;
+}
+.blog-item hgroup h3 {
+  font-size: 16px;
+  color: #a660b7;
+}
+.blog-item hgroup h4 {
+  font-size: 12px;
+  color: #666;
+}
+.blog-item p {
+  font: 12px/1.7 sumsun;
+  text-indent: 2em;
+  margin-top: 15px;
+}
+.publish-info {
+  position: absolute;
+  font: 12px/1.2 simsun;
+  color: #999;
+  right: 25px;
+  bottom: 15px;
+}
+.pager {
+  font-size: 0;
+  margin-left: 60px;
+}
+.pager li {
+  float: left;
+  background-color: #fff;
+  margin-left: 10px;
+  /*height: 35px;*/
+}
+.pager a {
+  display: inline-block;
+  font: 12px/35px simsun;
+  /*height: 35px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+}
+.pager a:hover, .pager a.active {
+  color: #fff;
+  background-color: #a660b7;
+  text-decoration: none;
+}
+.pager a[disabled] {
+  color: #666;
+}
+.side {
+  width: 260px;
+  margin-left: 720px;
+}
+.side>div {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.side .search {
+  position: relative;
+  height: 60px;
+  padding-top: 20px;
+}
+.search div {
+  position: relative;
+  width: 220px;
+  height: 40px;
+  margin-left: 20px;
+  /*border: 1px solid #ddd;*/
+}
+.search span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url(../img/task0001_2_marked_r2_c2.png) no-repeat 7px 7px;
+}
+.search input {
+  width: 173px;
+  height: 28px;
+  margin: 0;
+  padding: 5px 5px 5px 40px;
+  border: 1px solid #ddd;
+  font: 14px/1.2 simsun;
+}
+.search input:focus {
+  border: 1px solid #343434;
+  outline: none;
+}
+.search button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  font: 20px/1.2 simsun;
+  color: #fff;
+  background-color: #ddd;
+  border-width: 0;
+}
+.search input:focus+button {
+  background-color: #999;
+  border: 2px solid #343434;
+}
+.side .blog-menu {
+  height: 200px;
+}
+.blog-menu li:first-child a {
+  border-top: 1px solid #ddd;
+}
+.blog-menu a {
+  display: block;
+  height: 49px;
+  border-left: 4px solid #dfc6e6;
+  border-bottom: 1px solid #ddd;
+  font: 14px/48px simsun;
+  color: #666;
+  padding-left: 15px;
+}
+.blog-menu a:hover {
+  text-decoration: none;
+  border-left: 4px solid #522a5c;
+}
+.side .datebox {
+  height: 240px;
+}
+.side .tags {
+  height: 198px;
+}
+
+/* gallery页面样式 */
+.main.gallery-page {
+  height: 1000px;
+}
+.gallery {
+  float: left;
+  width: 670px;
+}
+.gallery-menu {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+}
+.gallery-menu li {
+  float: left;
+}
+.gallery-menu a {
+  display: inline-block;
+  font: 14px/45px simsun;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 4px solid #dfc6e6;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.gallery-menu li:first-child a {
+  border-left: 1px solid #ddd;
+}
+.gallery-menu a:hover {
+  text-decoration: none;
+  border-top: 4px solid #522a5c;
+  border-bottom: none;
+}
+.gallery-menu a.active {
+  text-decoration: none;
+  border-top: 4px solid #522a5c;
+  border-bottom: none;
+}
+.gallery-box {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: -3px;
+}
+.gallery-item {
+  float: left;
+  width: 160px;
+  margin: 3px;
+}
+.gallery-item.type-j1 {
+  width: 330px;
+  background-color: #522a5c;
+}
+.gallery-item.type-j2 {
+  background-color: #522a5c;
+}
+.gallery-item.type-a {
+  background-color: #d9a300;
+}
+.gallery-item.type-u {
+  background-color: #5900b2;
+}
+.gallery-item.type-f {
+  background-color: #8c2300;
+}
+.gallery-item>div {
+  position: relative;
+  /*margin-top: -3px;*/
+}
+.gallery-type {
+  float: left;
+  width: 50px;
+}
+.gallery-type span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 12px auto 0;
+  font: 14px/25px simsun;
+  text-align: center;
+}
+.gallery-info {
+  margin-left: 50px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.gallery-info h4 {
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.gallery-info p {
+  font: 12px/1.8 simsun;
+}
+.gallery + .side {
+  padding-top: 50px;
+}
