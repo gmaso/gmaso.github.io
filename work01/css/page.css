@@ -1,4 +1,4 @@
-/**
+*
  * 提供页面效果
  * email:gmaso1987@163.com.
  * Created by kevin on 2015/11/22.
@@ -27,7 +27,7 @@
 
 /* 总体设置 */
 html{background: #aaa;}
-body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: hidden;background: #fff;}
+body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow: auto;background: #fff;}
 .ct{width: 1205px;margin: 0 auto;overflow: hidden;}
 .j-close{cursor: pointer;}
 
@@ -70,16 +70,15 @@ body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: h
 
 
 /* 轮播头图 */
-.g-banner{position: relative;width: 1616px;height: 460px;margin: 0 auto;overflow: hidden;}
-.g-banner>div{position: absolute;width: 100%;left: 50%;}
-.g-banner .m-slide{display: block;position: absolute;left: -808px;}
-.m-slide{position: relative;width: 100%;height: 460px;background: #000;}
+.g-banner{position: relative;width: 100%;height: 460px;overflow: hidden;text-align: center;}
+.m-slide{display: inline-block;position: relative;width: 1616px;height: 460px;background: #000;overflow-x: hidden;}
+.m-slide a { display: block;height: 100%;overflow: hidden; }
 .m-slide ol,.m-slide li{position: absolute;top: 0;width: 100%;height: 100%;z-index:10;}
 .m-slide li{opacity: 0;-webkit-transition:.5s ease-out;-moz-transition:.5s ease-out;-ms-transition:.5s ease-out;transition:.5s ease-out;-webkit-transition-property:opacity,left,top;-moz-transition-property:opacity,left,top;-ms-transition-property:opacity,left,top;transition-property:opacity,left,top;}
 .m-slide li.z-crt{z-index: 11;opacity: 1;}
 
-/* 多点式幻灯指示控制器-居中 */
-.u-pointer{position: absolute;bottom: 10px;left: 0;right: 0;z-index: 15;text-align: center;line-height: 0;}
+ /*多点式幻灯指示控制器-居中*/
+.u-pointer{position: absolute;bottom: 10px;left: 0;right: 0;z-index: 100;text-align: center;}
 .u-pointer i{display: inline-block;width: 10px;height: 10px;margin: 0 0 0 5px;border-radius: 50%;box-shadow: inset 0 10px 0 rgba(0,0,0,0.5);cursor: pointer;background: #ccc;}
 .u-pointer i:first-child{margin-left: 0;}
 .u-pointer i:hover{background: #666;}
@@ -103,9 +102,8 @@ body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: h
 
 
 /* 工作环境 */
-.g-ws{position: relative;width: 1616px;height: 220px;margin: 0 auto;}
-.g-ws div{position: absolute;width: 100%;height: 100%;left: 50%;}
-.g-ws ol{display: block;position: absolute;left: -808px;}
+.g-ws{width: 100%;height: 220px;margin: 0 auto;text-align: center;overflow: hidden;}
+.g-ws ol{display: inline-block;position: relative;width: 1616px;}
 .g-ws li{display:inline-block;width: 320px;height: 220px;margin-right: 4px;}
 .g-ws li:last-child{margin-right: 0;}
 
@@ -213,12 +211,11 @@ body{position: relative;width:1616px;height: 2912px;margin: 0 auto;overflow-x: h
 @media screen and (max-width: 1205px){
   body{width: 1364px;}
   .ct{width: 960px;}
-  .g-banner .m-slide{left: -924px;}
-  .g-ws ol{left: -924px;}
+  .g-banner .m-slide{left: -126px;}
+  .g-ws ol{left: -126px;}
   .m-intro{width: 280px;height: 100%;margin-right: 60px;}
   .courbd{width: 735px;}
 }
 
 /**
  * 完.
- */

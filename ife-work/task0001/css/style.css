@@ -129,9 +129,7 @@ footer div+div {
 .banner {
   width: 100%;
   height: 525px;
-  background-image: url(../img/banner-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  background: url(../img/banner-bg.jpg) no-repeat center/auto 100%;
 }
 .banner .container {
   height: 100%;
@@ -464,7 +462,7 @@ div+div+div .title h3 {
 }
 .gallery {
   float: left;
-  width: 670px;
+  width: 710px;
 }
 .gallery-menu {
   display: inline-block;
@@ -489,15 +487,15 @@ div+div+div .title h3 {
 .gallery-menu a:hover {
   text-decoration: none;
   border-top: 4px solid #522a5c;
-  border-bottom: none;
+  border-bottom: 1px solid #fff;
 }
 .gallery-menu a.active {
   text-decoration: none;
   border-top: 4px solid #522a5c;
-  border-bottom: none;
+  border-bottom: 1px solid #fff;
 }
 .gallery-box {
-  width: 100%;
+  /*width: 100%;*/
   background-color: #fff;
   padding: 15px;
   margin-top: -3px;
@@ -505,7 +503,7 @@ div+div+div .title h3 {
 .gallery-item {
   float: left;
   width: 160px;
-  margin: 3px;
+  margin: 5px;
 }
 .gallery-item.type-j1 {
   width: 330px;
@@ -554,6 +552,79 @@ div+div+div .title h3 {
 .gallery-info p {
   font: 12px/1.8 simsun;
 }
+.gallery .btn-more {
+  height: 50px;
+  background-color: #fff;
+  color: #666;
+  font: 12px/50px normal simsun;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn-more h3 {
+  background: url(../img/task0001_3_marked_r2_c2.png) no-repeat 280px 16px;
+  margin: 0;
+}
 .gallery + .side {
   padding-top: 50px;
+}
+.hotlist {
+  /*width: 240px;*/
+  height: 220px;
+  padding: 10px;
+  color: #000;
+  /*font: 14px simsun;*/
+}
+.hotlist>p {
+  font: 14px/1.2 simsun;
+  color: #666;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.hotlist li {
+  margin-bottom: 15px;
+}
+/*.hotlist a {
+  text-decoration: none;
+}*/
+.hotlist .num {
+  display: inline-block;
+  background-color: #522a5c;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font: 12px/16px simsun;
+}
+.hotlist .score {
+  display: inline-block;
+  width: 98px;
+  height: 14px;
+  border: 1px solid #522a5c;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+.hotlist .name {
+  margin-left: 10px;
+}
+.score span {
+  display: block;
+  height: 100%;
+  background-color: #522a5c;
+}
+.score .s100 {
+  width: 100%;
+}
+.score .s85 {
+  width: 85%;
+}
+.score .s66 {
+  width: 66%;
+}
+.score .s40 {
+  width: 40%;
+}
+.score .s25 {
+  width: 25%;
 }
