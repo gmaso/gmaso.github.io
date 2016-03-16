@@ -1,0 +1,91 @@
+html,body,nav,footer {
+  padding: 0;
+  margin: 0;
+  background-color: #dedede;
+}
+nav {
+  /*width: 100%;*/
+  height: 60px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  clear: both;
+}
+nav h1 {
+  float: left;
+  /*margin-bottom: 150px;*/
+}
+nav ul {
+  float: right;
+  /*list-style-type: ;*/
+  /*padding-right: 30px;*/
+}
+nav ul li {
+  display: inline-block;
+}
+body>div {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  box-shadow: 2px 2px #848484;
+
+}
+body>div p {
+  text-indent: 2em;
+}
+div:nth-of-type(2) ul {
+  list-style-type: none;
+}
+div:nth-of-type(3) ul {
+  list-style-type: none;
+}
+div:nth-of-type(3) li {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+table {
+  /*border: 1px solid #666;*/
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #ccc;
+}
+table thead {
+  background-color: #333;
+  color: white;
+}
+table tfoot {
+  background-color: #ccc;
+  font-weight: bold;
+}
+th,td {
+  width: 495px;
+}
+th:last-child, td+td+td {
+  width: 210px;
+}
+input[type=submit] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #3355d0;
+  border-radius: 10px;
+
+}
+footer {
+  /*width: 100%;*/
+  height: 70px;
+  background-color: black;
+  color: white;
+  font: 14px/70px bold simsun;
+  text-align: center;
+  /*padding: 20px;*/
+}
