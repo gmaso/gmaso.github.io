@@ -1,0 +1,413 @@
+@charset: "UTF-8";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  min-width: 1280px;
+  background-color: #fff;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.cover {
+  position: relative;
+}
+
+.cover:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+
+/* 顶部样式 */
+
+header {
+  height: 56px;
+}
+
+header h1 {
+  display: inline-block;
+  height: 31px;
+  margin: 13px 0 12px 60px;
+  font: 21px/31px "黑体";
+  color: #393a3a;
+  padding-left: 40px;
+  background: url(../img/sprite.png) no-repeat -10px -135px;
+}
+
+header nav {
+  float: right;
+  margin-right: 60px;
+}
+
+header a {
+  color: #787b83;
+}
+
+header a:hover {
+  color: #e74f4d;
+}
+
+header ul,
+header li {
+  display: inline-block;
+  font-size: 0;
+}
+
+header ul li {
+  padding: 20px 25px 15px;
+}
+
+header ul li.active,
+header ul li:hover {
+  padding: 20px 25px 15px;
+  border-bottom: 4px solid #e74f4d;
+}
+
+header a {
+  font: 14px/17px "微软雅黑";
+}
+
+header a.login {
+  padding-left: 20px;
+  background: url(../img/sprite.png) no-repeat -9px -186px;
+}
+
+.try {
+  width: 100%;
+  height: 690px;
+  background: url(../img/banner1.jpg) no-repeat top center/cover;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+
+.try.cover:before {
+  background-color: rgba(3, 0, 0, 0.2);
+}
+
+.try .container {
+  position: relative;
+  padding: 220px 0 190px 115px;
+}
+
+.try h2 {
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.try p {
+  margin-left: 10px;
+  color: #fffdfd;
+  font-size: 21px;
+  line-height: 35px;
+}
+
+.try a {
+  display: inline-block;
+  width: 331px;
+  height: 65px;
+  margin-top: 65px;
+  margin-left: 10px;
+  background-color: #e74f4d;
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 65px;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* intro样式 */
+
+.intro {
+  height: 250px;
+}
+
+.intro .container {
+  vertical-align: top;
+  font-size: 0;
+  padding-top: 45px;
+}
+
+.intro li {
+  position: relative;
+  display: inline-block;
+  width: 155px;
+  margin: 0 70px;
+}
+
+.intro .icon {
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+.intro li:first-child .icon {
+  background: url(../img/sprite.png) no-repeat 50px -235px;
+}
+
+.intro li:nth-child(2) .icon {
+  background: url(../img/sprite.png) no-repeat 50px -307px;
+}
+
+.intro li:nth-child(3) .icon {
+  background: url(../img/sprite.png) no-repeat 50px -377px;
+}
+
+.intro li:last-child .icon {
+  background: url(../img/sprite.png) no-repeat 50px -458px;
+}
+
+.intro p {
+  text-align: center;
+  font: 14px/18px "黑体";
+  color: #767777;
+}
+
+.intro li+li:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  bottom: -14px;
+  left: -80px;
+  width: 2px;
+  height: 50px;
+  background-color: #aba6a5;
+}
+
+
+/* know样式 */
+
+.know {
+  height: 360px;
+  text-align: center;
+  background-color: #ededec;
+}
+
+.know .icon {
+  width: 91px;
+  height: 91px;
+  background: url(../img/sprite.png) no-repeat -10px -20px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.know p {
+  font: 54px/56px "黑体";
+  color: #867e7a;
+}
+
+
+/* search样式 */
+
+.search {
+  height: 340px;
+  background: url(../img/banner2.jpg) no-repeat center/cover;
+}
+.search.cover:before {
+  background-color: rgba(237,215,206,0.2);
+}
+.search .container {
+  position: relative;
+  text-align: center;
+}
+
+/* activity样式 */
+
+.activity {
+  height: 605px;
+}
+.activity .container {
+  padding: 100px 140px 115px;
+  text-align: center;
+  font-size: 0;
+}
+.activity li {
+  display: inline-block;
+  margin-left: 35px;
+  font: 14px/27px "微软雅黑";
+}
+
+.activity li:first-child {
+  margin-left: 0;
+}
+.activity div {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+/* world样式 */
+
+.world {
+  height: 567px;
+}
+
+.world .banner {
+  float: left;
+  width: 66%;
+  height: 100%;
+  color: #fff;
+  background: url(../img/banner3.jpg) no-repeat right center/cover;
+}
+.world .info {
+  width: 34%;
+  height: 100%;
+  margin-left: 66%;
+}
+
+/* time样式 */
+
+.time {
+  height: 520px;
+}
+
+.time div {
+  float: left;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+}
+
+.time div:first-child {
+  background-color: #e74f4d;
+  color: #fff;
+}
+.time .banner {
+  width: 34%;
+  background: url(../img/banner4.jpg) no-repeat left center/cover;
+}
+.time h3 {
+  font: 21px/30px "黑体";
+}
+/* volunteer样式 */
+
+.volunteer {
+  height: 750px;
+}
+
+
+/* footer样式 */
+
+.footer {
+  height: 360px;
+  color: #fff;
+  text-align: center;
+  background-color: #32353e;
+}
+
+.footer h3 {
+  font: 21px/48px "宋体";
+  padding-top: 90px;
+}
+
+.footer p {
+  width: 470px;
+  margin: 0 auto;
+  font: 12px/18px "宋体";
+}
+
+.footer form {
+  width: 520px;
+  margin: 30px auto 0;
+  font-size: 0;
+  border: 1px solid #90888a;
+}
+
+.footer input[type=text] {
+  width: 430px;
+  height: 39px;
+  padding: 0 0 0 10px;
+  font: 14px/27px "微软雅黑";
+  border: none;
+}
+
+.footer input[type=submit] {
+  width: 80px;
+  height: 39px;
+  margin: 0;
+  font: 15px/23px "微软雅黑";
+  color: #fff;
+  background-color: #686166;
+  border: none;
+  border-left: 1px solid #90888a;
+}
+
+.footer .icon {
+  width: 30px;
+  height: 25px;
+  margin-top: 37px;
+}
+
+.footer .icon.qq {
+  background: url(../img/sprite.png) no-repeat -10px -683px;
+}
+
+.footer .icon.weibo {
+  background: url(../img/sprite.png) no-repeat -10px -745px;
+  margin-left: 28px;
+}
+
+.footer .icon.twitter {
+  background: url(../img/sprite.png) no-repeat -10px -811px;
+  margin-left: 29px;
+}
+
+.footer .icon.other {
+  background: url(../img/sprite.png) no-repeat -10px -868px;
+  margin-left: 22px;
+}
+/* copyright样式 */
+
+.copyright {
+  height: 56px;
+  background-color: #2f3038;
+  clear: both;
+}
+
+.copyright span {
+  font: 12px/56px "宋体";
+  color: #fff;
+  margin-left: 100px;
+}
+
+.copyright a {
+  font: 12px/56px "宋体";
+  color: #fff;
+  float: right;
+  margin-right: 40px;
+}
+
+.copyright a:hover {
+  color: #e74f4d;
+}
