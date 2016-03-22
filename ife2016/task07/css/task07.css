@@ -371,6 +371,49 @@ header a.login {
   font: 12px/1.8 "微软雅黑";
   color: #aaa;
 }
+
+.volunteer .protocal {
+  float: left;
+  width: 290px;
+  margin-left: 140px;
+  color: #231815;
+}
+
+.volunteer .protocal ul {
+  margin: 0;
+  padding: 0;
+}
+.volunteer .protocal h3 {
+  font: 14px "黑体";
+
+}
+
+.volunteer .protocal p {
+  font: 12px/21px "黑体";
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.volunteer .protocal a {
+  /*float: right;*/
+  width: 35px;
+  margin-left: 240px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font: 12px/19px "宋体";
+  text-align: right;
+  background: url(../img/sprite.png) no-repeat -10px -625px;
+}
+
+.volunteer .contact {
+  margin-left: 530px;
+  margin-right: 140px;
+}
+
+.volunteer .contact div {
+  background-color: #ededee;
+  margin-bottom: 15px;
+}
 /* footer样式 */
 
 .footer {
