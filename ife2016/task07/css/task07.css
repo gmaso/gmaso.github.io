@@ -244,6 +244,39 @@ header a.login {
   text-align: center;
 }
 
+.search p {
+  color: #fff;
+  text-align: center;
+}
+
+.search p.title {
+  font: 21px/2 "微软雅黑";
+  padding-top: 50px;
+}
+
+.search p.icon {
+  width: 30px;
+  height: 2px;
+  /*margin-top: 10px;*/
+  background-color: #fff;
+  margin: 0 atuo;
+}
+
+.search p.help {
+  margin-top: 20px;
+  font: 12px/32px "微软雅黑";
+}
+
+.search form {
+  font: 12px/27px "微软雅黑";
+  color: #a8aaaa;
+  margin-top: 50px;
+}
+
+.search input {
+  width: 235px;
+  height: 37px;
+}
 /* activity样式 */
 
 .activity {
@@ -316,7 +349,28 @@ header a.login {
   height: 750px;
 }
 
+.volunteer .join {
+  width: 425px;
+  margin: 0 auto;
+  padding: 120px 0 100px;
+  text-align: center;
+  font-size: 0;
+}
 
+.volunteer .join h2 {
+  font: 21px/30px "黑体";
+}
+
+.volunteer .join .icon {
+  width: 30px;
+  height: 2px;
+  background-color: red;
+}
+
+.volunteer .join p {
+  font: 12px/1.8 "微软雅黑";
+  color: #aaa;
+}
 /* footer样式 */
 
 .footer {
