@@ -236,9 +236,11 @@ header a.login {
   height: 340px;
   background: url(../img/banner2.jpg) no-repeat center/cover;
 }
+
 .search.cover:before {
-  background-color: rgba(237,215,206,0.2);
+  background-color: rgba(237, 215, 206, 0.2);
 }
+
 .search .container {
   position: relative;
   text-align: center;
@@ -277,16 +279,20 @@ header a.login {
   width: 235px;
   height: 37px;
 }
+
+
 /* activity样式 */
 
 .activity {
   height: 605px;
 }
+
 .activity .container {
   padding: 100px 140px 115px;
   text-align: center;
   font-size: 0;
 }
+
 .activity li {
   display: inline-block;
   margin-left: 35px;
@@ -296,10 +302,13 @@ header a.login {
 .activity li:first-child {
   margin-left: 0;
 }
+
 .activity div {
   padding: 10px;
   border: 1px solid #ccc;
 }
+
+
 /* world样式 */
 
 .world {
@@ -313,11 +322,13 @@ header a.login {
   color: #fff;
   background: url(../img/banner3.jpg) no-repeat right center/cover;
 }
+
 .world .info {
   width: 34%;
   height: 100%;
   margin-left: 66%;
 }
+
 
 /* time样式 */
 
@@ -336,13 +347,17 @@ header a.login {
   background-color: #e74f4d;
   color: #fff;
 }
+
 .time .banner {
   width: 34%;
   background: url(../img/banner4.jpg) no-repeat left center/cover;
 }
+
 .time h3 {
   font: 21px/30px "黑体";
 }
+
+
 /* volunteer样式 */
 
 .volunteer {
@@ -383,9 +398,9 @@ header a.login {
   margin: 0;
   padding: 0;
 }
+
 .volunteer .protocal h3 {
   font: 14px "黑体";
-
 }
 
 .volunteer .protocal p {
@@ -414,6 +429,8 @@ header a.login {
   background-color: #ededee;
   margin-bottom: 15px;
 }
+
+
 /* footer样式 */
 
 .footer {
@@ -484,6 +501,8 @@ header a.login {
   background: url(../img/sprite.png) no-repeat -10px -868px;
   margin-left: 22px;
 }
+
+
 /* copyright样式 */
 
 .copyright {
