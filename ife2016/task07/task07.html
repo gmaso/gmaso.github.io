@@ -82,10 +82,19 @@
       <p class="icon"></p>
       <p class="help">每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
       <form action="">
-        <input type="text" class="country">
-        <input type="text" class="provience">
-        <input type="text" class="city">
-        <input type="submit" value="搜  索">
+        <div><input type="text" class="country" placeholder="中国"><a href="#"></a></div>
+        <div><input type="text" class="provience" placeholder="省份"><a href="#"></a>
+          <ul>
+            <li class="active">北京市</li>
+            <li>天津市</li>
+            <li>河北省</li>
+            <li>陕西省</li>
+            <li>内蒙古自治区</li>
+            <li>辽宁省</li>
+          </ul>
+        </div>
+        <div><input type="text" class="city" placeholder="城市"><a href="#"></a></div>
+        <input type="submit" value="搜&nbsp;&nbsp;&nbsp;&nbsp;索">
       </form>
     </div>
   </div>
@@ -135,7 +144,7 @@
       <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界</p>
       <a href="#">更多详情</a>
       <span>
-        <i class="icon"></i>
+        <i class="icon active"></i>
         <i class="icon"></i>
         <i class="icon"></i>
       </span>
@@ -146,22 +155,19 @@
     <div>
       <h3>新时代</h3>
       <h3>关于爱生活的我们</h3>
-      <p></p>
       <a href="#">查看更多</a>
     </div>
     <div>
       <h3>新时代</h3>
       <h3>关于爱生活的我们</h3>
-      <p></p>
       <a href="#">查看更多</a>
     </div>
-    <div class="banner"></div>
+    <div class="banner cover"></div>
   </div>
   <!-- 模块8 volunteer -->
   <div class="volunteer container">
     <div class="join">
       <h2>成为我们的志愿者</h2>
-      <span class="icon"></span>
       <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
     </div>
     <div class="protocal">
@@ -185,23 +191,23 @@
     <div class="contact">
       <form action="">
         <div class="name">
-          <lable for="name">姓名：</lable>
+          <label for="name">姓名：</label>
           <input type="text" id="name">
         </div>
         <div class="age">
-          <lable for="age">年龄：</lable>
+          <label for="age">年龄：</label>
           <input type="text" id="age">
         </div>
-        <div class="">
-          <lable for="phone">联系方式：</lable>
+        <div class="phone">
+          <label for="phone">联系方式：</label>
           <input type="text" id="phone">
         </div>
         <div class="name">
-          <lable for="address">联系地址</lable>
+          <label for="address">联系地址:</label>
           <input type="text" id="address">
         </div>
         <div class="dream">
-          <lable for="dream">请简单描述您梦想的生活：</lable>
+          <label for="dream">请简单描述您梦想的生活:</label>
           <textarea type="text" id="dream"></textarea>
         </div>
         <input type="submit" value="提交申请">

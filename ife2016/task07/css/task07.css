@@ -1,4 +1,3 @@
-@charset: "UTF-8";
 html,
 body,
 h1,
@@ -27,9 +26,9 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
   width: 1280px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .icon {
@@ -60,9 +59,9 @@ header h1 {
   display: inline-block;
   height: 31px;
   margin: 13px 0 12px 60px;
+  padding-left: 40px;
   font: 21px/31px "黑体";
   color: #393a3a;
-  padding-left: 40px;
   background: url(../img/sprite.png) no-repeat -10px -135px;
 }
 
@@ -107,13 +106,13 @@ header a.login {
 .try {
   width: 100%;
   height: 690px;
-  background: url(../img/banner1.jpg) no-repeat top center/cover;
-  color: #fff;
   font-family: "微软雅黑";
+  color: #fff;
+  background: url(../img/banner1.jpg) no-repeat top center/cover;
 }
 
 .try.cover:before {
-  background-color: rgba(3, 0, 0, 0.2);
+  background-color: rgba(3, 0, 0, .2);
 }
 
 .try .container {
@@ -128,9 +127,9 @@ header a.login {
 
 .try p {
   margin-left: 10px;
-  color: #fffdfd;
   font-size: 21px;
   line-height: 35px;
+  color: #fffdfd;
 }
 
 .try a {
@@ -139,12 +138,12 @@ header a.login {
   height: 65px;
   margin-top: 65px;
   margin-left: 10px;
-  background-color: #e74f4d;
   font-size: 30px;
   font-weight: lighter;
   line-height: 65px;
-  color: #fff;
   text-align: center;
+  color: #fff;
+  background-color: #e74f4d;
 }
 
 
@@ -155,14 +154,14 @@ header a.login {
 }
 
 .intro .container {
-  vertical-align: top;
-  font-size: 0;
   padding-top: 45px;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .intro li {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 155px;
   margin: 0 70px;
 }
@@ -191,19 +190,19 @@ header a.login {
 }
 
 .intro p {
-  text-align: center;
   font: 14px/18px "黑体";
+  text-align: center;
   color: #767777;
 }
 
-.intro li+li:before {
+.intro li + li:before {
   display: inline-block;
   position: absolute;
-  content: "";
   bottom: -14px;
   left: -80px;
   width: 2px;
   height: 50px;
+  content: "";
   background-color: #aba6a5;
 }
 
@@ -219,9 +218,9 @@ header a.login {
 .know .icon {
   width: 91px;
   height: 91px;
-  background: url(../img/sprite.png) no-repeat -10px -20px;
   margin-top: 90px;
   margin-bottom: 50px;
+  background: url(../img/sprite.png) no-repeat -10px -20px;
 }
 
 .know p {
@@ -238,7 +237,7 @@ header a.login {
 }
 
 .search.cover:before {
-  background-color: rgba(237, 215, 206, 0.2);
+  background-color: rgba(170, 52, 51, .2);
 }
 
 .search .container {
@@ -247,21 +246,21 @@ header a.login {
 }
 
 .search p {
-  color: #fff;
   text-align: center;
+  color: #fff;
 }
 
 .search p.title {
-  font: 21px/2 "微软雅黑";
   padding-top: 50px;
+  font: 21px/2 "微软雅黑";
 }
 
 .search p.icon {
   width: 30px;
   height: 2px;
+  margin: 0 atuo;
   /*margin-top: 10px;*/
   background-color: #fff;
-  margin: 0 atuo;
 }
 
 .search p.help {
@@ -270,14 +269,71 @@ header a.login {
 }
 
 .search form {
-  font: 12px/27px "微软雅黑";
-  color: #a8aaaa;
   margin-top: 50px;
+  font-size: 0;
+  color: #a8aaaa;
 }
 
-.search input {
+.search form div {
+  display: inline-block;
   width: 235px;
+  margin-right: 30px;
+  vertical-align: top;
+}
+
+.search div input {
+  box-sizing: border-box;
+  width: 200px;
   height: 37px;
+  padding: 0 0 0 15px;
+  /* 求解：为何要加这条 */
+  vertical-align: top;
+  border: none;
+  outline: medium;
+  background-color: #fff;
+}
+
+.search div a {
+  display: inline-block;
+  width: 35px;
+  height: 37px;
+  background: url(../img/sprite.png) no-repeat -5px -531px #fff;
+}
+
+.search div:focus {
+  outline: 1px solid #be4e48;
+}
+
+.search div ul {
+  margin: 0;
+  padding: 0 0 15px;
+  list-style: none;
+  border: 1px solid#be4e48;
+  background-color: #e3e3e4;
+}
+
+.search div li {
+  height: 25px;
+  padding-left: 30px;
+  font: 12px/26px "微软雅黑";
+  text-align: left;
+  color: #323333;
+}
+
+.search div li.active,
+.search div li:hover {
+  color: #fff;
+  background: url(../img/sprite.png) no-repeat 0 -582px #be4e48;
+}
+
+.search input[type=submit] {
+  margin-right: 0;
+  padding: 0;
+  font: 14px/27px "微软雅黑";
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: #be4e48;
 }
 
 
@@ -289,8 +345,8 @@ header a.login {
 
 .activity .container {
   padding: 100px 140px 115px;
-  text-align: center;
   font-size: 0;
+  text-align: center;
 }
 
 .activity li {
@@ -317,16 +373,94 @@ header a.login {
 
 .world .banner {
   float: left;
+  position: relative;
   width: 66%;
   height: 100%;
+  font-family: "微软雅黑";
+  text-align: center;
   color: #fff;
   background: url(../img/banner3.jpg) no-repeat right center/cover;
+}
+
+.world .banner p:first-child {
+  padding-top: 130px;
+  font-size: 46px;
+  line-height: 46px;
+}
+
+.world .banner p:nth-child(2) {
+  height: 158px;
+  font-size: 158px;
+  line-height: 158px;
+}
+
+.world .banner p:nth-child(n+3) {
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.world .banner:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  border-top: 15px solid transparent;
+  border-right: 25px solid #fff;
+  border-bottom: 15px solid transparent;
 }
 
 .world .info {
   width: 34%;
   height: 100%;
   margin-left: 66%;
+  text-align: center;
+}
+
+.world .info h3 {
+  padding-top: 165px;
+  font: 18px bold "宋体";
+}
+
+.world .info h3 em {
+  font-style: normal;
+  color: #e25c60;
+}
+
+.world .info p {
+  width: 290px;
+  margin: 0 auto;
+  padding-top: 30px;
+  font: 12px/30px "宋体";
+  text-align: left;
+  color: #aaa;
+}
+
+.world .info a {
+  display: inline-block;
+  width: 103px;
+  height: 32px;
+  margin: 50px auto 0;
+  font: 12px/32px "微软雅黑";
+  color: #e25c60;
+  border: 1px solid #e25c60;
+}
+
+.world .info span {
+  display: block;
+  margin-top: 25px;
+}
+
+.world .info i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #929292;
+  border-radius: 50%;
+}
+
+.world .info i.active {
+  background-color: #929292;
 }
 
 
@@ -344,17 +478,71 @@ header a.login {
 }
 
 .time div:first-child {
-  background-color: #e74f4d;
   color: #fff;
+  background-color: #e74f4d;
 }
 
 .time .banner {
+  position: relative;
   width: 34%;
   background: url(../img/banner4.jpg) no-repeat left center/cover;
 }
 
+.time .banner:before {
+  background-color: rgba(3, 0, 0, .4);
+}
+
+.time .banner:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+}
+
 .time h3 {
   font: 21px/30px "黑体";
+}
+
+.time h3:first-child {
+  margin-top: 175px;
+}
+
+.time h3 + h3:after {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 20px auto 0;
+  content: "";
+}
+
+.time div:first-child h3 + h3:after {
+  background-color: #fff;
+}
+
+.time div + div h3 + h3:after {
+  background-color: #e74f4d;
+}
+
+.time a {
+  display: block;
+  width: 167px;
+  height: 41px;
+  margin: 25px auto 0;
+  font: 21px/41px "黑体";
+  color: inherit;
+}
+
+.time div:first-child a {
+  border: 1px solid #fff;
+}
+
+.time div + div a {
+  color: #e74f4d;
+  border: 1px solid #e74f4d;
 }
 
 
@@ -368,17 +556,20 @@ header a.login {
   width: 425px;
   margin: 0 auto;
   padding: 120px 0 100px;
-  text-align: center;
   font-size: 0;
+  text-align: center;
 }
 
 .volunteer .join h2 {
   font: 21px/30px "黑体";
 }
 
-.volunteer .join .icon {
+.volunteer .join h2:after {
+  display: block;
   width: 30px;
   height: 2px;
+  margin: 0 auto;
+  content: "";
   background-color: red;
 }
 
@@ -404,30 +595,89 @@ header a.login {
 }
 
 .volunteer .protocal p {
-  font: 12px/21px "黑体";
   margin-top: 15px;
   margin-bottom: 5px;
+  font: 12px/21px "黑体";
 }
 
 .volunteer .protocal a {
   /*float: right;*/
   width: 35px;
+  margin-bottom: 10px;
   margin-left: 240px;
   padding-left: 10px;
-  margin-bottom: 10px;
   font: 12px/19px "宋体";
   text-align: right;
   background: url(../img/sprite.png) no-repeat -10px -625px;
 }
 
+.volunteer .protocal li:first-child a {
+  margin-bottom: 40px;
+}
+
 .volunteer .contact {
-  margin-left: 530px;
   margin-right: 140px;
+  margin-left: 500px;
+  font-size: 0;
+}
+
+.volunteer input,
+.volunteer textarea,
+.volunteer input:focus,
+.volunteer textarea:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .volunteer .contact div {
-  background-color: #ededee;
+  height: 40px;
   margin-bottom: 15px;
+  font: 12px/40px "宋体";
+  color: #231815;
+  background-color: #ededee;
+}
+
+.volunteer .contact div:nth-child(-n+4) {
+  display: inline-block;
+  width: 310px;
+}
+
+.volunteer .contact div:nth-child(-2n+4) {
+  margin-left: 20px;
+}
+
+.volunteer .contact div label {
+  padding-left: 15px;
+}
+
+.volunteer .contact div input {
+  height: 40px;
+}
+
+.volunteer .contact .dream {
+  /*clear: both;*/
+  height: 120px;
+  padding: 0 15px;
+}
+
+.volunteer .contact .dream label {
+  padding-left: 0;
+}
+
+.volunteer .dream textarea {
+  clear: left;
+  width: 100%;
+  height: 60px;
+}
+
+.volunteer .contact input[type=submit] {
+  width: 100%;
+  height: 40px;
+  font: 14px "黑体";
+  color: #323333;
+  border: none;
+  background-color: #ededee;
 }
 
 
@@ -435,14 +685,14 @@ header a.login {
 
 .footer {
   height: 360px;
-  color: #fff;
   text-align: center;
+  color: #fff;
   background-color: #32353e;
 }
 
 .footer h3 {
-  font: 21px/48px "宋体";
   padding-top: 90px;
+  font: 21px/48px "宋体";
 }
 
 .footer p {
@@ -472,9 +722,9 @@ header a.login {
   margin: 0;
   font: 15px/23px "微软雅黑";
   color: #fff;
-  background-color: #686166;
   border: none;
   border-left: 1px solid #90888a;
+  background-color: #686166;
 }
 
 .footer .icon {
@@ -488,42 +738,43 @@ header a.login {
 }
 
 .footer .icon.weibo {
-  background: url(../img/sprite.png) no-repeat -10px -745px;
   margin-left: 28px;
+  background: url(../img/sprite.png) no-repeat -10px -745px;
 }
 
 .footer .icon.twitter {
-  background: url(../img/sprite.png) no-repeat -10px -811px;
   margin-left: 29px;
+  background: url(../img/sprite.png) no-repeat -10px -811px;
 }
 
 .footer .icon.other {
-  background: url(../img/sprite.png) no-repeat -10px -868px;
   margin-left: 22px;
+  background: url(../img/sprite.png) no-repeat -10px -868px;
 }
 
 
 /* copyright样式 */
 
 .copyright {
+  clear: both;
   height: 56px;
   background-color: #2f3038;
-  clear: both;
 }
 
 .copyright span {
+  margin-left: 100px;
   font: 12px/56px "宋体";
   color: #fff;
-  margin-left: 100px;
 }
 
 .copyright a {
-  font: 12px/56px "宋体";
-  color: #fff;
   float: right;
   margin-right: 40px;
+  font: 12px/56px "宋体";
+  color: #fff;
 }
 
 .copyright a:hover {
   color: #e74f4d;
 }
+
