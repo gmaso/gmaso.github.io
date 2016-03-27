@@ -1,0 +1,130 @@
+html, body, div, header, article, section, footer,h1, h2, h3, h4, h5, h6,ul, ol {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  color: inherit;
+}
+
+$txt-color: #fff;
+$txt-color-2: #4b8cd2;
+$head-txt-color: #828282;
+$head-txt-color-2: #646464;
+$bg-color: #2c66b8;
+$head-bg-color: #e1e1e1;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 32rem;
+}
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+.home {
+  color: $txt-color;
+  background-color: $bg-color;
+}
+
+.headbar-default {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.headbar {
+  height: 6rem;
+  color: $head-txt-color;
+  background-color: $head-bg-color;
+}
+.headbar .logo {
+  float: left;
+  margin-left: 4rem;
+}
+.headbar .logo a {
+  padding-left: 4rem;
+  font-family: KaiTi;
+  font-size: 3.5rem;
+  line-height: 6rem;
+  text-decoration: none;
+  background: url(../img/favicon.ico) no-repeat center left;
+}
+.navbar {
+  float: right;
+  margin-right: 4rem;
+  font-size: 2em;
+}
+.navbar-default ul {
+  list-style: none;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  text-decoration: none;
+  padding: 1rem;
+  line-height: 6rem;
+}
+.case {
+  margin-top: 8rem;
+}
+h2 {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  font-size: 3rem;
+  line-height: 1.8;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  background-color: #4a7cc2;
+  border-top: .2rem solid #7198c1;
+  border-bottom: .2rem solid #7198c1;
+  box-shadow: 0 0 1.2rem rgba(0,0,0,.4);
+}
+.case ul {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+}
+.item {
+  overflow: hidden;
+}
+.demo {
+  float: left;
+  width: 30rem;
+  height: 15rem;
+  margin: 0 .5rem;
+  padding: .4rem;
+  border: .1rem solid #ccc;
+  overflow: hidden;
+}
+.demo img {
+  width: 100%;
+}
+.item {
+  padding-bottom: 2rem;
+  border-bottom: .2rem solid #7198c1;
+  margin-bottom: 5rem;
+}
+.item h3, .item p {
+  margin-left: 34rem;
+}
+.item h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.item p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
