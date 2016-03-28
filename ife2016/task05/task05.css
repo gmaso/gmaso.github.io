@@ -1,0 +1,177 @@
+html,
+body,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #dedede;
+}
+
+body {
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+nav {
+  clear: both;
+  /*position: absolute;*/
+  height: 60px;
+  padding: 20px;
+  color: white;
+  background-color: #333;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li.active {
+  color: #ccc;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body > div {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #cdcdcd;
+  background-color: white;
+  box-shadow: 2px 2px #848484;
+}
+
+body > div p {
+  text-indent: 2em;
+}
+
+div:nth-of-type(-n+4) {
+  margin-right: 400px;
+}
+
+div:nth-of-type(2) ul {
+  list-style-type: none;
+}
+
+div:nth-of-type(3) ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  content: " ";
+}
+
+div:nth-of-type(3) li {
+  float: left;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+div:nth-of-type(4) table {
+  border-collapse: collapse;
+}
+
+div:nth-of-type(4) table td {
+  height: 25px;
+  padding-left: 5px;
+  border: 1px solid #ccc;
+}
+
+div:nth-of-type(4) table thead {
+  color: white;
+  background-color: #333;
+}
+
+div:nth-of-type(4) table tfoot {
+  font-weight: bold;
+  background-color: #ccc;
+}
+
+div:nth-of-type(4) th,
+td {
+  width: 495px;
+}
+
+div:nth-of-type(4) th:last-child,
+td + td + td {
+  width: 210px;
+}
+
+div:nth-of-type(5) {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  box-sizing: border-box;
+  width: 365px;
+  height: 500px;
+  font-size: 12px;
+}
+
+div:nth-of-type(5) h3 {
+  margin: 0;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  border-left: 3px solid #dedede;
+}
+
+div:nth-of-type(5) table {
+  width: 100%;
+}
+
+div:nth-of-type(5) table input[type=text],
+div:nth-of-type(5) table input[type=password] {
+  width: 130px;
+  height: 20px;
+}
+
+div:nth-of-type(5) table td:first-child {
+  /*width: 110px;*/
+  height: 30px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+div:nth-of-type(5) tr:last-child td:first-child {
+  vertical-align: top;
+}
+
+div:nth-of-type(5) textarea {
+  width: 95%;
+  height: 100px;
+}
+
+input[type=submit] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #3355d0;
+}
+
+footer {
+  /*width: 100%;*/
+  height: 70px;
+  font: 14px/70px bold simsun;
+  text-align: center;
+  color: white;
+  background-color: black;
+  /*padding: 20px;*/
+}
+

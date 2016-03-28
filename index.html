@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <title>曹杰的官方网站</title>
@@ -14,15 +15,22 @@
      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-75369084-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+  </script>
 </head>
 
 <body class="home">
@@ -45,8 +53,10 @@
     <ul>
       <li class="item">
         <a class="demo" href="netease/index.html" title="请点击打开"><img src="blog/img/netease.png" alt="《Web前端开发实践》作业"></a>
-        <h3>《Web前端开发实践》大作业</h3>
-        <h4>网易云课堂《前端开发微专业》课程</h4>
+        <h3>
+          <a href="netease/index.html" title="请点击打开">网易云课堂简易首页</a>
+        </h3>
+        <h4>网易云课堂《前端开发微专业》课程大作业</h4>
         <p>根据<a href="netease/img/specs.jpg" target="_blank">视觉稿和交互要求</a>完成页面设计。全部用原生JavaScript，未使用任何js框架。</p>
       </li>
       <li class="item">
@@ -55,7 +65,7 @@
           <a href="ife2016/task01/index.html" title="请点击打开">任务一：零基础HTML编码</a>
         </h3>
         <h4>百度前端训练营2016 - task 01</h4>
-        <p>参考<a href="ife2016/task01/task_1_1_1.jpg" target="_blank">示例图</a>，完成一个HTML页面代码编写（不写CSS，不需要关注样式，只关注文档结构）</p>
+        <p>参考<a href="ife2016/task01/task_1_1_1.jpg" target="_blank">示例图</a>，完成一个HTML页面代码编写（不写CSS，不需要关注样式，只关注文档结构）。</p>
       </li>
       <li class="item">
         <a class="demo" href="ife2016/task02/index.html" title="请点击打开"><img src="ife2016/task02/task_1_2_1.jpg" alt="任务二"></a>
@@ -63,19 +73,20 @@
           <a href="ife2016/task02/index.html" title="请点击打开">任务二：零基础HTML及CSS编码（一）</a>
         </h3>
         <h4>百度前端训练营2016 - task 02</h4>
-        <p>基于第一个任务“零基础HTML编码”的代码，参考<a href="ife2016/task02/task_1_2_1.jpg" target="_blank">示例图</a>，在步骤一的代码基础上增加CSS样式代码的编写</p>
+        <p>基于第一个任务“零基础HTML编码”的代码，参考<a href="ife2016/task02/task_1_2_1.jpg" target="_blank">示例图</a>，在步骤一的代码基础上增加CSS样式代码的编写。</p>
       </li>
       <li class="item">
         <a class="demo" href="ife2016/task03/task03-float.html" title="请点击打开"><img src="ife2016/task03/task_1_3_1.png" alt="任务三"></a>
         <h3 class="multi">
           任务三：三栏式布局<br>
-          <a href="ife2016/task03/task03-float.html" title="请点击打开">任务三：三栏式布局 - float布局</a><br>
-          <a href="ife2016/task03/task03-flex.html" title="请点击打开">任务三：三栏式布局 - flex布局</a><br>
-          <a href="ife2016/task03/task03-calc.html" title="请点击打开">任务三：三栏式布局 - calc()布局</a><br>
-          <a href="ife2016/task03/task03-table.html" title="请点击打开">任务三：三栏式布局 - table布局</a>
+          <a href="ife2016/task03/task03-float.html" title="请点击打开">float布局实现</a><br>
+          <a href="ife2016/task03/task03-flex.html" title="请点击打开">flex布局实现</a><br>
+          <a href="ife2016/task03/task03-calc.html" title="请点击打开">calc()布局实现</a><br>
+          <a href="ife2016/task03/task03-table.html" title="请点击打开">table布局实现</a>
         </h3>
         <h4>百度前端训练营2016 - task 03</h4>
-        <p>使用 HTML与CSS 按照<a href="ife2016/task03/task_1_3_1.png" target="_blank">示例图</a>实现三栏式布局。<br>左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。背景色为 #eee 区域的高度取决于三个子元素中最高的高度。</p>
+        <p>使用 HTML与CSS 按照<a href="ife2016/task03/task_1_3_1.png" target="_blank">示例图</a>实现三栏式布局。
+          <br>左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。背景色为 #eee 区域的高度取决于三个子元素中最高的高度。</p>
       </li>
       <li class="item">
         <a class="demo" href="ife2016/task04/task04.html" title="请点击打开"><img src="ife2016/task04/task_1_4_1.png" alt="任务四"></a>
@@ -83,7 +94,15 @@
           <a href="ife2016/task04/task04.html" title="请点击打开">任务四：定位和居中问题</a>
         </h3>
         <h4>百度前端训练营2016 - task 04</h4>
-        <p>实现如<a href="ife2016/task04/task_1_4_1.png" target="_blank">示例图</a>的效果灰色元素水平垂直居中，有两个四分之一圆位于其左上角和右下角</p>
+        <p>实现如<a href="ife2016/task04/task_1_4_1.png" target="_blank">示例图</a>的效果灰色元素水平垂直居中，有两个四分之一圆位于其左上角和右下角。</p>
+      </li>
+      <li class="item">
+        <a class="demo" href="ife2016/task05/task05.html" title="请点击打开"><img src="ife2016/task05/task_1_5_1.jpg" alt="任务四"></a>
+        <h3>
+          <a href="ife2016/task05/task05.html" title="请点击打开">任务五：零基础HTML及CSS编码（二）</a>
+        </h3>
+        <h4>百度前端训练营2016 - task 05</h4>
+        <p>基于任务二“零基础HTML及CSS编码（一）”实现如<a href="ife2016/task05/task_1_5_1.jpg" target="_blank">示例图</a>的布局效果。</p>
       </li>
       <li class="item">
         <a class="demo" href="ife2016/task07/task07.html" title="请点击打开"><img src="ife2016/task07/task_1_7_2.jpg" alt="任务七"></a>
@@ -91,7 +110,7 @@
           <a href="ife2016/task07/task07.html" title="请点击打开">任务七：实现常见的技术产品官网的页面架构及样式布局</a>
         </h3>
         <h4>百度前端训练营2016 - task 07</h4>
-        <p>参考<a href="ife2016/task07/task_1_7_2.jpg" target="_blank">效果图</a>，通过HTML及CSS实现设计稿 设计稿效果</p>
+        <p>参考<a href="ife2016/task07/task_1_7_2.jpg" target="_blank">效果图</a>，通过HTML及CSS实现设计稿 设计稿效果。</p>
       </li>
       <li class="item">
         <a class="demo" href="ife2016/task10/task10.html" title="请点击打开"><img src="ife2016/task10/task_1_10_1.png" alt="任务十"></a>
@@ -99,18 +118,15 @@
           <a href="ife2016/task10/task10.html" title="请点击打开">任务十：Flexbox布局练习</a>
         </h3>
         <h4>百度前端训练营2016 - task 10</h4>
-        <p>参考<a href="ife2016/task10/task_1_10_1.png" target="_blank">效果图</a>，使用Flexbox实现布局</p>
+        <p>参考<a href="ife2016/task10/task_1_10_1.png" target="_blank">效果图</a>，使用Flexbox实现布局。</p>
       </li>
     </ul>
-
   </div>
   <div class="aboutme" id="me">
     <h2>关于我</h2>
-
   </div>
   <div class="other" id="ot">
     <h2>其它</h2>
-
   </div>
   <footer class="copyright">
     copyleft:
@@ -120,3 +136,4 @@
 </body>
 
 </html>
+

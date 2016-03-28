@@ -1,8 +1,23 @@
-html, body, div, header, article, section, footer,h1, h2, h3, h4, h5, h6,ul, ol {
+html,
+body,
+div,
+header,
+article,
+section,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
   margin: 0;
   padding: 0;
   border: 0;
 }
+
 a {
   color: inherit;
 }
@@ -13,21 +28,24 @@ $head-txt-color: #828282;
 $head-txt-color-2: #646464;
 $bg-color: #2c66b8;
 $head-bg-color: #e1e1e1;
-
 html {
   font-size: 62.5%;
 }
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   content: " ";
   display: table;
 }
+
 .cf:after {
   clear: both;
 }
+
 .cf {
   *zoom: 1;
 }
+
 .home {
   min-width: 32rem;
   color: $txt-color;
@@ -41,15 +59,18 @@ html {
   left: 0;
   z-index: 999;
 }
+
 .headbar {
   height: 6rem;
   color: $head-txt-color;
   background-color: $head-bg-color;
 }
+
 .headbar .logo {
   float: left;
   margin-left: 4rem;
 }
+
 .headbar .logo a {
   padding-left: 4rem;
   font-family: KaiTi;
@@ -58,17 +79,21 @@ html {
   text-decoration: none;
   background: url(../img/favicon.ico) no-repeat center left;
 }
+
 .navbar {
   float: right;
   margin-right: 4rem;
   font-size: 2em;
 }
+
 .navbar-default ul {
   list-style: none;
 }
+
 .navbar li {
   display: inline-block;
 }
+
 .navbar li a {
   text-decoration: none;
   padding: 1rem;
@@ -77,10 +102,12 @@ html {
   border: .2rem solid $head-txt-color;
   border-radius: .5rem;
 }
+
 .navbar li a:hover {
   color: #f00;
   border-color: #f00;
 }
+
 .banner {
   position: relative;
   margin-top: 6rem;
@@ -89,6 +116,7 @@ html {
   overflow: hidden;
   background: url(../img/home-banner.jpg) no-repeat center bottom;
 }
+
 .cover {
   position: absolute;
   top: 0;
@@ -98,6 +126,7 @@ html {
   background-color: $bg-color;
   opacity: .4;
 }
+
 .banner p {
   position: absolute;
   right: 3rem;
@@ -105,9 +134,11 @@ html {
   font-family: KaiTi;
   font-size: 4rem;
 }
+
 .case {
   margin-top: 7rem;
 }
+
 h2 {
   padding: 0.5rem;
   margin-top: 1rem;
@@ -115,65 +146,77 @@ h2 {
   font-size: 3rem;
   line-height: 1.8;
   text-align: center;
-  text-shadow: 0 -1px rgba(0,0,0,.5);
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
   background-color: #4a7cc2;
   border-top: .2rem solid #7198c1;
   border-bottom: .2rem solid #7198c1;
-  box-shadow: 0 0 1.2rem rgba(0,0,0,.4);
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, .4);
 }
+
 .case ul {
   width: 80%;
   margin: 0 auto;
   list-style: none;
 }
+
 .item {
   overflow: hidden;
 }
+
 .demo {
   float: left;
   width: 30rem;
   height: 15rem;
   margin: 0 1rem;
   background-color: #fff;
-  box-shadow: 0 0 .2rem .1rem #666;
+  box-shadow: 1px 1px .2rem .1rem #999;
   overflow: hidden;
 }
+
 .demo img {
   width: 100%;
 }
+
 .item {
   padding-bottom: 2rem;
   border-bottom: .2rem solid #7198c1;
   margin-bottom: 5rem;
 }
-.item h3, .item h4, .item p {
+
+.item h3,
+.item h4,
+.item p {
   margin-left: 34rem;
 }
+
 .item a {
   color: $txt-color-2;
   text-decoration: none;
 }
+
 .item h3 {
   font-size: 3rem;
   margin-top: 1rem;
-  margin-bottom: .5rem;
-
+  margin-bottom: 1rem;
 }
+
 .item .multi a {
   font-size: 1.6rem;
   margin-left: 2rem;
 }
+
 .item h4 {
   font-size: 1.6rem;
   text-indent: 4rem;
   color: #ccc;
+  margin-bottom: 2rem;
 }
+
 .item p {
   font-size: 1.6rem;
   line-height: 1.5;
   text-indent: 2rem;
 }
-
 
 @media screen and (max-width: 64rem) {
   .home {
@@ -198,8 +241,11 @@ h2 {
   .case ul {
     width: 100%;
   }
-  .item h3, .item h4, .item p {
+  .item h3,
+  .item h4,
+  .item p {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 }
+
