@@ -17,9 +17,7 @@ $head-bg-color: #e1e1e1;
 html {
   font-size: 62.5%;
 }
-body {
-  min-width: 32rem;
-}
+
 .cf:before, .cf:after {
   content: " ";
   display: table;
@@ -31,6 +29,7 @@ body {
   *zoom: 1;
 }
 .home {
+  min-width: 32rem;
   color: $txt-color;
   background-color: $bg-color;
 }
@@ -40,6 +39,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
 }
 .headbar {
   height: 6rem;
@@ -73,10 +73,40 @@ body {
   text-decoration: none;
   padding: 1rem;
   font-weight: bold;
-  line-height: 6rem;
+  line-height: 5.6rem;
+  border: .2rem solid $head-txt-color;
+  border-radius: .5rem;
+}
+.navbar li a:hover {
+  color: #f00;
+  border-color: #f00;
+}
+.banner {
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: -6rem;
+  height: 35rem;
+  overflow: hidden;
+  background: url(../img/home-banner.jpg) no-repeat center bottom;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $bg-color;
+  opacity: .4;
+}
+.banner p {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  font-family: KaiTi;
+  font-size: 4rem;
 }
 .case {
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 h2 {
   padding: 0.5rem;
@@ -103,9 +133,9 @@ h2 {
   float: left;
   width: 30rem;
   height: 15rem;
-  margin: 0 .5rem;
-  padding: .4rem;
-  border: .1rem solid #ccc;
+  margin: 0 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 .2rem .1rem #666;
   overflow: hidden;
 }
 .demo img {
@@ -116,16 +146,60 @@ h2 {
   border-bottom: .2rem solid #7198c1;
   margin-bottom: 5rem;
 }
-.item h3, .item p {
+.item h3, .item h4, .item p {
   margin-left: 34rem;
+}
+.item a {
+  color: $txt-color-2;
+  text-decoration: none;
 }
 .item h3 {
   font-size: 3rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 
+}
+.item .multi a {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+.item h4 {
+  font-size: 1.6rem;
+  text-indent: 4rem;
+  color: #ccc;
 }
 .item p {
   font-size: 1.6rem;
   line-height: 1.5;
+  text-indent: 2rem;
+}
+
+
+@media screen and (max-width: 64rem) {
+  .home {
+    width: 32rem;
+    margin: 0 auto;
+  }
+  .headbar .logo {
+    float: none;
+    margin-left: 0;
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .banner {
+    display: none;
+  }
+  .demo {
+    float: none;
+    display: block;
+  }
+  .case ul {
+    width: 100%;
+  }
+  .item h3, .item h4, .item p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
