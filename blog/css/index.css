@@ -63,6 +63,7 @@ body {
 .navbar li a {
   text-decoration: none;
   padding: 1rem;
+  font-weight: bold;
   line-height: 6rem; }
 
 .case {
