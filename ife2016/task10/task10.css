@@ -1,0 +1,57 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.con1, .con2 {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc; }
+
+.con1 {
+  width: 70%;
+  min-width: 641px;
+  height: 40%;
+  margin-bottom: 50px; }
+
+.con2 {
+  width: 50%;
+  max-width: 640px;
+  height: 40%; }
+
+.box {
+  width: 150px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  order: 1; }
+
+.box1, .box2, .box3 {
+  border: 1px solid #f00; }
+
+.box1 {
+  height: 120px; }
+
+.box2 {
+  height: 100px; }
+
+.box3 {
+  height: 40px; }
+
+.box4 {
+  height: 200px;
+  border: 1px solid #0f0; }
+
+.con1 {
+  justify-content: space-between;
+  align-items: center; }
+
+.con2 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start; }
+  .con2 .box4 {
+    order: 0; }
+
+/*# sourceMappingURL=task10.css.map */
