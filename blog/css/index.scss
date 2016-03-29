@@ -104,8 +104,8 @@ html {
 }
 
 .navbar li a:hover {
-  color: #f00;
-  border-color: #f00;
+  color: #333;
+  border-color: #333;
 }
 
 .banner {
@@ -275,10 +275,10 @@ h2 {
 }
 
 .copyright {
-  height: 4rem;
-  margin: 0 auto;
+  height: 5rem;
+  margin: 2rem auto 0;
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 5rem;
   text-align: center;
   color: $txt-color-2;
   background-color: $head-bg-color;
@@ -286,6 +286,10 @@ h2 {
   a {
     text-decoration: none;
   }
+}
+
+a[href="#ot"], #ot {
+  display: none;
 }
 
 @media screen and (max-width: 640px) {

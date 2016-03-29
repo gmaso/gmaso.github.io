@@ -83,8 +83,8 @@ html {
   border-radius: .5rem; }
 
 .navbar li a:hover {
-  color: #f00;
-  border-color: #f00; }
+  color: #333;
+  border-color: #333; }
 
 .banner {
   position: relative;
@@ -219,15 +219,18 @@ h2 {
           display: none; }
 
 .copyright {
-  height: 4rem;
-  margin: 0 auto;
+  height: 5rem;
+  margin: 2rem auto 0;
   font-size: 2rem;
-  line-height: 4rem;
+  line-height: 5rem;
   text-align: center;
   color: #4b8cd2;
   background-color: #e1e1e1; }
   .copyright a {
     text-decoration: none; }
+
+a[href="#ot"], #ot {
+  display: none; }
 
 @media screen and (max-width: 640px) {
   .headbar .logo {
