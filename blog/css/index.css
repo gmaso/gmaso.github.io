@@ -115,8 +115,8 @@ html {
 
 h2 {
   padding: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 1.8;
   text-align: center;
@@ -180,11 +180,56 @@ h2 {
   line-height: 1.5;
   text-indent: 2rem; }
 
-@media screen and (max-width: 64rem) {
-  .home {
-    width: 32rem;
-    margin: 0 auto; }
+.aboutme .intro {
+  width: 96rem;
+  margin: 0 auto; }
+  .aboutme .intro ul {
+    font-size: 0; }
+    .aboutme .intro ul li {
+      display: inline-block;
+      position: relative;
+      margin-left: 3rem; }
+      .aboutme .intro ul li img {
+        width: 30rem;
+        height: 30rem;
+        box-sizing: border-box;
+        border: .2rem solid #999;
+        border-radius: 5rem;
+        overflow: hidden; }
+      .aboutme .intro ul li p {
+        position: absolute;
+        bottom: .5rem;
+        width: 100%;
+        margin: 0;
+        font-size: 4rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 5px #2c66b8, 0 0 10px red; }
+      .aboutme .intro ul li .icon {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: -2.5rem;
+        border-left: 2rem solid #fff;
+        border-top: 1rem solid transparent;
+        border-bottom: 1rem solid transparent; }
+      .aboutme .intro ul li:first-child {
+        margin-left: 0; }
+        .aboutme .intro ul li:first-child .icon {
+          display: none; }
 
+.copyright {
+  height: 4rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #4b8cd2;
+  background-color: #e1e1e1; }
+  .copyright a {
+    text-decoration: none; }
+
+@media screen and (max-width: 640px) {
   .headbar .logo {
     float: none;
     margin-left: 0;
@@ -198,7 +243,8 @@ h2 {
 
   .demo {
     float: none;
-    display: block; }
+    display: block;
+    margin: 0 auto; }
 
   .case ul {
     width: 100%; }
@@ -208,5 +254,35 @@ h2 {
   .item p {
     margin-left: 1rem;
     margin-right: 1rem; } }
+@media screen and (min-width: 640px) {
+  .navbar {
+    display: none; }
+
+  .case ul {
+    width: 95%;
+    margin: 0 auto; } }
+@media screen and (min-width: 760px) {
+  .navbar {
+    display: inline-block; } }
+@media screen and (min-width: 1500px) {
+  .case ul {
+    width: 1200px;
+    margin: 0 auto; } }
+@media screen and (max-width: 96rem) {
+  .aboutme .intro {
+    width: 100%; }
+    .aboutme .intro ul {
+      width: 30rem;
+      margin: 0 auto; }
+      .aboutme .intro ul li {
+        display: block;
+        margin: 0 auto 3rem auto; }
+        .aboutme .intro ul li .icon {
+          top: -2.5rem;
+          left: 50%;
+          border-top: 2rem solid #fff;
+          border-right: 1rem solid transparent;
+          border-bottom: none;
+          border-left: 1rem solid transparent; } }
 
 /*# sourceMappingURL=index.css.map */
