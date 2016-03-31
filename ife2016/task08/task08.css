@@ -1,0 +1,53 @@
+html, body, div {
+  padding: 0;
+  margin: 0; }
+
+.cont {
+  border: 1px solid #999;
+  padding: 20px;
+  padding-right: 0px;
+  font-size: 0; }
+  .cont .item {
+    display: inline-block;
+    height: 50px;
+    font-size: 14px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+
+@media screen and (max-width: 768px) {
+  .col-s-2 {
+    width: calc(16.66% - 20px); }
+
+  .col-s-3 {
+    width: calc(25% - 20px); }
+
+  .col-s-6 {
+    width: calc(50% - 20px); }
+
+  .col-s-8 {
+    width: calc(66.66% - 20px); }
+
+  .col-s-12 {
+    width: calc(100% - 20px); } }
+@media screen and (min-width: 769px) {
+  .col-l-1 {
+    width: calc(8.335% - 20px); }
+
+  .col-l-2 {
+    width: calc(16.66% - 20px); }
+
+  .col-l-3 {
+    width: calc(25% - 20px); }
+
+  .col-l-4 {
+    width: calc(33.33% - 20px); }
+
+  .col-l-6 {
+    width: calc(50% - 20px); } }
+
+/*# sourceMappingURL=task08.css.map */

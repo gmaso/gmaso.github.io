@@ -1,0 +1,63 @@
+html, body, div {
+  padding: 0;
+  margin: 0;
+}
+
+$box-padding: 20px;
+$gutter: 20px;
+
+.cont {
+  border: 1px solid #999;
+  padding: $box-padding;
+  padding-right: $box-padding - $gutter;
+  font-size: 0;
+
+  .item {
+    display: inline-block;
+    height: 50px;
+    font-size: 14px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 10px;
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-s-2 {
+    width: calc(16.66% - #{$gutter});
+  }
+  .col-s-3 {
+    width: calc(25% - #{$gutter});
+  }
+  .col-s-6 {
+    width: calc(50% - #{$gutter});
+  }
+  .col-s-8 {
+    width: calc(66.66% - #{$gutter});
+  }
+  .col-s-12 {
+    width: calc(100% - #{$gutter});
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .col-l-1 {
+    width: calc(8.335% - #{$gutter});
+  }
+  .col-l-2 {
+    width: calc(16.66% - #{$gutter});
+  }
+  .col-l-3 {
+    width: calc(25% - #{$gutter});
+  }
+  .col-l-4 {
+    width: calc(33.33% - #{$gutter});
+  }
+  .col-l-6 {
+    width: calc(50% - #{$gutter});
+  }
+}
