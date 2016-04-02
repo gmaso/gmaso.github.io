@@ -5,6 +5,7 @@ html, body, div {
 
 .con {
   display: flex;
+  flex-wrap: wrap;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
@@ -15,9 +16,7 @@ html, body, div {
   width: 150px;
   margin: 10px 0;
   box-sizing: border-box;
-  order: 1; }
-
-.box1, .box2, .box3 {
+  order: 1;
   border: 1px solid #f00; }
 
 .box1 {
@@ -31,12 +30,10 @@ html, body, div {
 
 .box4 {
   height: 200px;
-  border: 1px solid #0f0; }
+  border-color: #0f0; }
 
 @media screen and (max-width: 640px) {
   .con {
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start; }
     .con .box4 {
