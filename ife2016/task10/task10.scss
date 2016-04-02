@@ -4,22 +4,13 @@ html, body, div {
   border: 0;
 }
 
-.con, .con {
+.con {
   display: flex;
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
-}
-.con1 {
-  width: 70%;
-  min-width: 641px;
-  height: 40%;
-  margin-bottom: 50px;
-}
-.con2 {
-  width: 50%;
-  max-width: 640px;
-  height: 40%;
+  justify-content: space-between;
+  align-items: center;
 }
 .box {
   width: 150px;
@@ -43,17 +34,17 @@ html, body, div {
   height: 200px;
   border: 1px solid #0f0;
 }
-.con1 {
-  justify-content: space-between;
-  align-items: center;
-}
-.con2 {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
 
-  .box4 {
-    order: 0;
+
+@media screen and (max-width: 640px) {
+  .con {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    .box4 {
+      order: 0;
+    }
   }
 }
