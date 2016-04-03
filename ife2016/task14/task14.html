@@ -45,9 +45,8 @@ var aqiData = [
   });
   // 将数组数据输出到列表中
   for(var j = 0, l = array.length; j < l; j++) {
-    var e = document.createElement("li"),
-      num = j + 1;
-    e.innerHTML = "第" + num + "名：" + array[j][0]+ ", " + array[j][1];
+    var e = document.createElement("li");
+    e.innerHTML = "第" + (j+1) + "名：" + array[j][0]+ ", " + array[j][1];
     list.appendChild(e);
   }
 })();
