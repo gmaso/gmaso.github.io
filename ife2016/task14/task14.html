@@ -41,11 +41,7 @@ var aqiData = [
   }
   // 根据空气质量指数对数组进行排序
   array.sort(function(a, b) {
-    if(a[1] > b[1]){
-      return -1;
-    } else {
-      return 1;
-    }
+    return b[1] - a[1];
   });
   // 将数组数据输出到列表中
   for(var j = 0, l = array.length; j < l; j++) {
