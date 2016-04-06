@@ -13,9 +13,9 @@ var aqiData = {};
  * 然后渲染aqi-list列表，增加新增的数据
  */
 function addAqiData() {
-  var city = document.getElementById("aqi-city-input"),
-    value = document.getElementById("aqi-value-input");
-
+  var city = document.getElementById("aqi-city-input").value,
+    value = document.getElementById("aqi-value-input").value;
+  aqiData.city =
 }
 
 /**
@@ -45,11 +45,15 @@ function delBtnHandle() {
 }
 
 function init() {
-
+  var add-btn = document.getElementById("add-btn"),
+    aqi-table = document.getElementById("aqi-table"),
+    del-btn = aqi-table.getElementsByTagName("a");
   // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
-
+  add-btn.onclick = addBtnHandle;
   // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
-
+  for (var i = 0, len = del-btn.length; i < len; i++) {
+    del-btn[i].onclick = delBtnHandle;
+  }
 }
 
 init();
