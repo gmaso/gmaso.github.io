@@ -1,0 +1,131 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+5:I[4431,[],"OutletBoundary"]
+7:I[5278,[],"AsyncMetadataOutlet"]
+9:I[4431,[],"ViewportBoundary"]
+b:I[4431,[],"MetadataBoundary"]
+c:"$Sreact.suspense"
+e:I[7150,[],""]
+:HL["/_next/static/css/fcdb01efdc56a7d4.css","style"]
+0:{"P":null,"b":"Ck7FlOVkSC9SYqci2_Z-p","p":"","c":["","posts","linux-dev-environment-setup"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","linux-dev-environment-setup","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/fcdb01efdc56a7d4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":["$","body",null,{"className":"antialiased","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","linux-dev-environment-setup","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L4",null,["$","$L5",null,{"children":["$L6",["$","$L7",null,{"promise":"$@8"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$L9",null,{"children":"$La"}],null],["$","$Lb",null,{"children":["$","div",null,{"hidden":true,"children":["$","$c",null,{"fallback":null,"children":"$Ld"}]}]}]]}],false]],"m":"$undefined","G":["$e",[]],"s":false,"S":true}
+f:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","858","static/chunks/app/posts/%5Bslug%5D/page-a7925b685ffdeaf9.js"],""]
+10:T396b,<h2>安装系统（Ubuntu 或 Debian）</h2>
+<p>推荐 Ubuntu 18.04 或者 Ubuntu 20.04。</p>
+<h4>更新系统</h4>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&#x26;&#x26;</span> <span class="token function">sudo</span> <span class="token function">apt</span> dist-upgrade
+</span></code></pre>
+<h2>配置环境变量和安装必备软件</h2>
+<!-- more -->
+<h4>修改 hosts</h4>
+<ol>
+<li>打开 <a href="https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts">https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts</a> ，并将其中的内容复制到 /etc/hosts 中</li>
+<li>复制以下到 /etc/hosts 中：</li>
+</ol>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token number">192.30</span>.253.112 github.com
+</span><span class="code-line"><span class="token number">192.30</span>.253.118 gist.github.com
+</span><span class="code-line"><span class="token number">151.101</span>.112.133 assets-cdn.github.com
+</span><span class="code-line"><span class="token number">151.101</span>.184.133 raw.githubusercontent.com
+</span><span class="code-line"><span class="token number">151.101</span>.112.133 gist.githubusercontent.com
+</span><span class="code-line"><span class="token number">151.101</span>.184.133 cloud.githubusercontent.com
+</span><span class="code-line"><span class="token number">151.101</span>.112.133 camo.githubusercontent.com
+</span></code></pre>
+<h4>安装 git</h4>
+<h4>安装 zsh 和 oh-my-zsh</h4>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token function">zsh</span>
+</span><span class="code-line"><span class="token function">sh</span> <span class="token parameter variable">-c</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="token variable">)</span></span>"</span>
+</span></code></pre>
+<h5>安装zsh相关插件</h5>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">git</span> clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+</span><span class="code-line"><span class="token function">git</span> clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+</span><span class="code-line"><span class="token function">git</span> clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+</span><span class="code-line"><span class="token comment"># 修改 .zshrc 文件，主题修改为 ys，并添加插件</span>
+</span><span class="code-line"><span class="token assign-left variable">ZSH_THEME</span><span class="token operator">=</span><span class="token string">"ys"</span>
+</span><span class="code-line"><span class="token assign-left variable">plugins</span><span class="token operator">=</span><span class="token punctuation">(</span>zsh-nvm zsh-autosuggestions zsh-syntax-highlighting <span class="token function">git</span><span class="token punctuation">)</span>
+</span><span class="code-line"><span class="token comment"># 添加 zsh-nvm 插件后，如果还没有安装 nvm，会在 source .zshrc 后自动开始安装</span>
+</span></code></pre>
+<h4>安装 nvm</h4>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">// 如果 <span class="token builtin class-name">source</span> 命令没有自动安装 nvm，则手动安装
+</span><span class="code-line"><span class="token function">curl</span> -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh <span class="token operator">|</span> <span class="token function">bash</span>
+</span><span class="code-line">nvm <span class="token function">install</span> <span class="token number">12</span>
+</span><span class="code-line"><span class="token function">npm</span> i <span class="token parameter variable">-g</span> @tarojs/cli webpack webpack-cli gulp
+</span></code></pre>
+<h4>配置 openjdk</h4>
+<ol>
+<li>安装 openjdk
+<a href="http://openjdk.java.net/install/">JDK 8</a>
+Debian, Ubuntu, etc.
+On the command line, type:</li>
+</ol>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> openjdk-8-jdk
+</span></code></pre>
+<p>The openjdk-8-jre package contains just the Java Runtime Environment. If you want to develop Java programs then please install the openjdk-8-jdk package.</p>
+<ol>
+<li>配置java环境变量</li>
+</ol>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">vi</span> /etc/profile
+</span><span class="code-line"><span class="token comment"># 在末尾添加：</span>
+</span><span class="code-line"><span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/usr/lib/jvm/java-8-openjdk-amd64/
+</span><span class="code-line"><span class="token builtin class-name">export</span> <span class="token assign-left variable">JRE_HOME</span><span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/jre
+</span><span class="code-line"><span class="token builtin class-name">export</span> <span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>.:<span class="token variable">$CLASSPATH</span><span class="token builtin class-name">:</span><span class="token variable">$JAVA_HOME</span>/lib:<span class="token variable">$JRE_HOME</span>/lib
+</span><span class="code-line"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token variable">$JRE_HOME</span>/bin
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 保存退出</span>
+</span><span class="code-line"><span class="token builtin class-name">source</span> /etc/profile
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 查看版本信息</span>
+</span><span class="code-line"><span class="token function">java</span> <span class="token parameter variable">-version</span>
+</span><span class="code-line">
+</span></code></pre>
+<h4>安装 docker</h4>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token punctuation">\</span>
+</span><span class="code-line">    apt-transport-https <span class="token punctuation">\</span>
+</span><span class="code-line">    ca-certificates <span class="token punctuation">\</span>
+</span><span class="code-line">    <span class="token function">curl</span> <span class="token punctuation">\</span>
+</span><span class="code-line">    gnupg-agent <span class="token punctuation">\</span>
+</span><span class="code-line">    software-properties-common
+</span><span class="code-line"><span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://download.docker.com/linux/ubuntu/gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -
+</span><span class="code-line"><span class="token function">sudo</span> apt-key fingerprint 0EBFCD88
+</span><span class="code-line"><span class="token function">sudo</span> add-apt-repository <span class="token punctuation">\</span>
+</span><span class="code-line">   <span class="token string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+</span></span><span class="code-line"><span class="token string">   <span class="token variable"><span class="token variable">$(</span>lsb_release <span class="token parameter variable">-cs</span><span class="token variable">)</span></span> \
+</span></span><span class="code-line"><span class="token string">   stable"</span>
+</span><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt-get</span> update
+</span><span class="code-line"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> docker-ce docker-ce-cli containerd.io
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 添加 docker 用户组，使用非 root 运行</span>
+</span><span class="code-line"><span class="token function">sudo</span> <span class="token function">groupadd</span> <span class="token function">docker</span>
+</span><span class="code-line"><span class="token function">sudo</span> <span class="token function">usermod</span> <span class="token parameter variable">-aG</span> <span class="token function">docker</span> <span class="token environment constant">$USER</span>
+</span><span class="code-line">newgrp <span class="token function">docker</span>
+</span><span class="code-line"><span class="token function">docker</span> run hello-world
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 开机启动</span>
+</span><span class="code-line"><span class="token function">sudo</span> systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span>
+</span><span class="code-line">
+</span><span class="code-line"><span class="token comment"># 可设置源，加快镜像下载数据。设置后需要重启 docker 服务，以下源只适用于腾讯云</span>
+</span><span class="code-line"><span class="token builtin class-name">echo</span> <span class="token string">"OPTIONS='--registry-mirror=https://mirror.ccs.tencentyun.com'"</span> <span class="token operator">>></span> /etc/sysconfig/docker
+</span><span class="code-line">systemctl daemon-reload
+</span><span class="code-line"><span class="token function">service</span> <span class="token function">docker</span> restart
+</span></code></pre>
+<h4>安装 docker-compose</h4>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line"><span class="token function">sudo</span> <span class="token function">curl</span> <span class="token parameter variable">-L</span> <span class="token string">"https://github.com/docker/compose/releases/download/1.25.4/docker-compose-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-s</span><span class="token variable">)</span></span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> <span class="token parameter variable">-m</span><span class="token variable">)</span></span>"</span> <span class="token punctuation">\</span>
+</span><span class="code-line">    <span class="token parameter variable">-o</span> /usr/local/bin/docker-compose
+</span><span class="code-line">
+</span><span class="code-line">// 如果下载总是失败，可以直接用第三方下载工具从以下网址下载，完成后复制到 /usr/local/bin/ 中
+</span><span class="code-line">https://github.com/docker/compose/releases/download/1.25.0/docker-compose-Linux-x64_64
+</span><span class="code-line"><span class="token function">sudo</span> <span class="token function">chmod</span> +x /usr/local/bin/docker-compose
+</span></code></pre>
+<h4>安装 homebrew</h4>
+<p>安装可能耗时很久。</p>
+<pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line">/bin/bash <span class="token parameter variable">-c</span> <span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="token variable">)</span></span>"</span>
+</span><span class="code-line"><span class="token builtin class-name">test</span> <span class="token parameter variable">-d</span> ~/.linuxbrew <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">eval</span> <span class="token variable"><span class="token variable">$(</span>~/.linuxbrew/bin/brew shellenv<span class="token variable">)</span></span>
+</span><span class="code-line"><span class="token builtin class-name">test</span> <span class="token parameter variable">-d</span> /home/linuxbrew/.linuxbrew <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">eval</span> <span class="token variable"><span class="token variable">$(</span>/home/linuxbrew/.linuxbrew/bin/brew shellenv<span class="token variable">)</span></span>
+</span><span class="code-line"><span class="token builtin class-name">test</span> <span class="token parameter variable">-r</span> ~/.bash_profile <span class="token operator">&#x26;&#x26;</span> <span class="token builtin class-name">echo</span> <span class="token string">"eval \<span class="token variable"><span class="token variable">$(</span><span class="token variable">$(</span>brew --prefix<span class="token punctuation">)</span>/bin/brew shellenv<span class="token variable">)</span></span>"</span> <span class="token operator">>></span>~/.bash_profile
+</span><span class="code-line"><span class="token builtin class-name">echo</span> <span class="token string">"eval \<span class="token variable"><span class="token variable">$(</span><span class="token variable">$(</span>brew --prefix<span class="token punctuation">)</span>/bin/brew shellenv<span class="token variable">)</span></span>"</span> <span class="token operator">>></span>~/.profile
+</span><span class="code-line">brew update
+</span></code></pre>4:["$","div",null,{"className":"min-h-screen flex flex-col","children":[["$","header",null,{"className":"border-b border-gray-200 dark:border-gray-800","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-6","children":["$","div",null,{"className":"flex justify-between items-center","children":[["$","$Lf",null,{"href":"/","className":"text-2xl font-bold hover:text-blue-500 transition-colors","children":"Gmaso"}],["$","nav",null,{"className":"space-x-6","children":[["$","$Lf",null,{"href":"/","className":"hover:text-blue-500 transition-colors","children":"首页"}],["$","$Lf",null,{"href":"/archives","className":"hover:text-blue-500 transition-colors","children":"归档"}]]}]]}]}]}],["$","main",null,{"className":"max-w-4xl mx-auto px-4 py-12 flex-1","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-8 pb-8 border-b border-gray-200 dark:border-gray-800","children":[["$","h1",null,{"className":"text-4xl font-bold mb-4","children":"Linux 开发环境配置"}],["$","div",null,{"className":"flex items-center gap-4 text-gray-600 dark:text-gray-400 text-sm","children":[["$","time",null,{"dateTime":"$D2020-05-16T10:45:18.000Z","children":"2020年05月16日"}],false]}]]}],["$","div",null,{"className":"prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-a:text-blue-500 hover:prose-a:text-blue-600 prose-code:text-pink-600 prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-img:rounded-lg prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:bg-gray-50 dark:prose-blockquote:bg-gray-900 prose-blockquote:py-1 prose-blockquote:px-4","dangerouslySetInnerHTML":{"__html":"$10"}}]]}]}],"$L11"]}]
+11:["$","footer",null,{"className":"border-t border-gray-200 dark:border-gray-800 mt-20","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8 text-center text-gray-600 dark:text-gray-400","children":[["$","p",null,{"children":"© 2025 Gmaso. All rights reserved."}],["$","p",null,{"className":"mt-2","children":["$","a",null,{"href":"https://beian.miit.gov.cn/","target":"_blank","rel":"noopener noreferrer","className":"hover:text-blue-500 transition-colors","children":"渝ICP备18006361号-1"}]}]]}]}]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:null
+8:{"metadata":[["$","title","0",{"children":"Linux 开发环境配置 | Gmaso"}],["$","meta","1",{"name":"description","content":"Linux 开发环境配置"}],["$","meta","2",{"name":"author","content":"gma so"}],["$","meta","3",{"name":"keywords","content":"blog,technology,programming"}]],"error":null,"digest":"$undefined"}
+d:"$8:metadata"
